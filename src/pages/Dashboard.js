@@ -10,7 +10,7 @@ const Dashboard = () => {
     // Fetch expenses on load
     useEffect(() => {
         fetchExpenses();
-    }, []);
+    }, [fetchExpenses]);
 
     const fetchExpenses = async () => {
         try {
